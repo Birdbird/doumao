@@ -18,5 +18,9 @@ def Login():
 def Logined():
 	return render_template('auth.html',content=common.DoumaoAuth())
 
+@app.route('/userhome')
+def UserHome():
+	return render_template('page/index.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
